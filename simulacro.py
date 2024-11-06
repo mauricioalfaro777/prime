@@ -211,3 +211,124 @@ print("La lista es:",lista)
 for contenido in lista:
     print(contenido)
 """
+""""
+vector=[]
+for i in range(1,101):
+    vector.append(i)
+print("El vector es:",vector)
+print("El promedio es:",sum(vector)/len(vector))
+"""
+""""
+vector=[]
+numero_positivo=0
+neutro=0
+numero_negativo=0
+for i in range(10):
+    valores=int(input("Introduce un número en la posición "+str(i+1)+": "))
+    vector.append(valores)
+    if valores>0:
+        numero_positivo+=1
+    elif valores<0:
+        numero_negativo+=1
+    else:
+        neutro+=1
+print("El vector es:",vector)
+print("La Cantidad de números positivos es:",numero_positivo)
+print("La Cantidad de números negativos es:",numero_negativo)
+print("La Cantidad de números neutros es:",neutro)
+"""
+"""""
+vector=[]
+numero_par=0
+numero_impar=0
+for i in range(15):
+    vector.append(i)
+    if i%2==0:
+        numero_par+=1
+    else:
+            numero_impar+=1
+print("El vector es:",vector)
+print("La cantidad de números pares es:",numero_par)
+print("La cantidad de números impares es:",numero_impar)
+"""""
+"""
+vertor=[]
+for i in range(51):
+    vertor.append(i)
+print("El vector es:",vertor)
+print("El promedio es:",sum(vertor)/len(vertor))
+"""
+"""
+Vector=[]
+logitud=int(input("Introduce la longitud del vector: "))
+for i in range(logitud):
+    valor=input("Introduce un valor en la posición "+str(i+1)+": ")
+    alreves=valor[::-1]
+    Vector.append(alreves)
+print("El vector es:",Vector)
+"""
+#matrices
+"""
+matriz=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+print("La matriz es:",matriz ,end="\n")
+print("El promedio de las filas es:",sum(matriz[1])/len(matriz[1]))
+print("EL primer elemento de la matriz es:",matriz[0][0])
+print("El segundo elemento de la matriz es:", matriz[1][1])
+print("El promedio de las columnas es:",sum(matriz[0])/len(matriz[0]))
+"""
+"""
+#Creacion de la matriz
+fila=int(input("Introduce la cantidad de filas: "))
+columna=int(input("Introduce la cantidad de columnas: "))
+matriz=[]
+for i in range(fila):
+    fila=[]
+    for j in range(columna):
+        valor=int(input("Introduce un valor en la posición "+str(i+1)+","+str(j+1)+": "))
+        fila.append(valor)
+    matriz.append(fila)
+print("La matriz es:")
+for fila in matriz:
+    print(fila)
+"""
+# Crear la primera matriz
+"""
+matriz = []
+fila = int(input("Introduce la cantidad de filas: "))
+columna = int(input("Introduce la cantidad de columnas: "))
+print("Introduce la primera matriz")
+for i in range(fila):
+    fila_temp = []  # Crear una fila temporal
+    for j in range(columna):
+        valor = int(input("Introduce un valor en la posición " + str(i + 1) + "," + str(j + 1) + ": "))
+        fila_temp.append(valor)
+    matriz.append(fila_temp)  # Añadir la fila completa a la matriz
+
+# Crear la segunda matriz
+print("Introduce la segunda matriz")
+matriz2 = []
+for i in range(fila):
+    fila_temp = []  # Crear una fila temporal
+    for j in range(columna):
+        valor2 = int(input("Introduce un valor en la posición " + str(i + 1) + "," + str(j + 1) + ": "))
+        fila_temp.append(valor2)
+    matriz2.append(fila_temp)  # Añadir la fila completa a la matriz2
+
+# Sumar las matrices para crear matriz3
+matriz3 = []
+for i in range(fila):
+    fila_temp = []  # Crear una fila temporal para la matriz3
+    for j in range(columna):
+        suma = matriz[i][j] + matriz2[i][j]  # Sumar los valores correspondientes
+        fila_temp.append(suma)
+    matriz3.append(fila_temp)  # Añadir la fila completa a la matriz3
+
+# Mostrar la matriz resultante
+print("La matriz suma es:")
+for fila in matriz3:
+    print(fila)
+"""
